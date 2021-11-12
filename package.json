@@ -1,0 +1,21 @@
+{
+  "name": "miniapp",
+  "version": "1.0.0",
+  "description": "Web App Inspired on the Mini Canada Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "npm",
+    "php",
+    "ajax"
+  ],
+  "author": "Eduardo Schlichting",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "underscore": "^1.13.1"
+  }
+}
