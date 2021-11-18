@@ -1,0 +1,73 @@
+.lightbox-wrapper {
+    width: 100%;
+    background-color: $gray-block;
+
+
+    .lightbox-outter {
+        width: 100%;
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+
+        .car {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            img {
+                width: 100%;
+                padding-bottom: 2em;
+            }
+
+            h3 {
+                padding-bottom: .5em;
+            }
+
+            .book-btn {
+                padding-top: 1.5em;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                i {
+                    padding-left: .5em;
+                }
+            }
+        }
+
+        .leases {
+            padding: 2em 0;
+            width: fit-content;
+            display: flex;
+            
+        }
+        .lease {
+            width: fit-content;
+                        
+            .title-leases {
+                text-transform: uppercase;
+                padding-bottom: 1.5em;
+            }
+        }
+        .lease, .lease-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .lease-box {
+            width: 80%;
+            padding: 2em 1em;
+            background-color: $leases-block;
+            text-align: center;
+            margin-bottom: 2em;
+            
+            & > * {
+                padding-bottom: .5em;
+            }
+        }
+    }
+}

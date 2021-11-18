@@ -1,0 +1,23 @@
+.book-test {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .book-test-content {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        padding: 5em 0;
+        
+        p {
+            
+            &:not(:last-child) {
+                padding-bottom: 1em;
+            }
+        }
+
+    }
+}
+

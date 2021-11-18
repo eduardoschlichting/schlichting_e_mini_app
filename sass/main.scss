@@ -1,0 +1,16 @@
+@import "modules/_reset";
+@import "modules/_variables";
+@import "modules/_navigation";
+@import "modules/_header";
+@import "modules/_home-content";
+@import "modules/thumbnails";
+@import "modules/lightbox";
+
+@import "modules/_queries";
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: $main-type;
+}
+
