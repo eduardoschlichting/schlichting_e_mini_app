@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost', // this will change when you go live
-        'dbname' => 'db_test_array', // update this with your database name
+        'dbname' => 'db_miniApp', // update this with your database name
         'charset' => 'utf8'
     );
 

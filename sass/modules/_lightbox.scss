@@ -1,7 +1,22 @@
+.lightbox {
+    display: none;
+}
+.visible {
+    display: block !important;
+}
+
 .lightbox-wrapper {
     width: 100%;
     background-color: $gray-block;
+    position: relative;
 
+    #close-btn {
+        position: absolute;
+        top: 0;
+        left: 2em;
+        font-size: 2em;
+        cursor: pointer;
+    }
 
     .lightbox-outter {
         width: 100%;
@@ -16,13 +31,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             
             img {
-                width: 100%;
+                max-width: 400px;
                 padding-bottom: 2em;
             }
 
             h3 {
+                max-width: 400px;
+                text-align: center;
                 padding-bottom: .5em;
             }
 

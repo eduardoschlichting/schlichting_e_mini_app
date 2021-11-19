@@ -69,12 +69,14 @@
             
 
             <div class="discover-btn-wrapper">
-                <div class="discover-btn">discover our models <i class="fas fa-chevron-right"></i>
+                <a href="#book-test" class="discover-btn">
+                Discover our models <i class="fas fa-chevron-right"></i>
+                </a>
             </div>
             
         </section>
 
-        <section class="book-test">
+        <section class="book-test" id="book-test">
             <div class="book-test-content">
                 <p>Expressive and self assured, the new MINI 3 door is a true original – combining 60+ years of convention-defying ideas with modern touches and practical features.</p> 
 
@@ -87,87 +89,18 @@
         </section>
 
         <section class="thumbnail-wrapper">
-
-            <div class="model-thumbs">
-                <div class="model">
-                    <img src="./dist/cooper.png" alt="Mini Cooper">
-                    <h3>Mini Cooper</h3>
-                    <p>View Details</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="model-thumbs">
-                <div class="model">
-                    <img src="./dist/cooper.png" alt="Mini Cooper">
-                    <h3>Mini Cooper</h3>
-                    <p>View Details</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
-            <div class="model-thumbs">
-                <div class="model">
-                    <img src="./dist/cooper.png" alt="Mini Cooper">
-                    <h3>Mini Cooper</h3>
-                    <p>View Details</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-            </div>
+            <thumb
+            v-on:showdata="popLightbox"
+            v-for="item in carsData" 
+            :piece="item" 
+            :key="item.id">
+        </thumb>
         </section>
 
 
         <!-- Lightbox test -->
 
-        <section class="lightbox-wrapper">
-            <div class="lightbox-outter">
-                <div class="car">
-                    <img src="./dist/cooper.png" alt="Mini Cooper">
-                    <h3>2022 Mini Cooper</h3>
-                    <p>All Inclusive Price: $27,456</p>
-
-                    <div class="book-btn">Book a test drive <i class="fas fa-chevron-right"></i>
-                    </div>
-                </div>
-
-
-                <div class="leases">
-                    <div class="lease">
-                        <h3 class="title-leases">Lease</h3>
-
-                        <div class="lease-box">
-                            <h4>Rate starting from</h4>
-                            <h3>3.99%</h3>
-                            <h5>48 months</h5>
-                        </div>
-
-                        <div class="lease-box">
-                            <h4>Monthly payment starting from</h4>
-                            <h3>3.99%</h3>
-                            <h5>48 months</h5>
-                        </div>
-                    </div>
-
-                    <div class="lease">
-                        <h3 class="title-leases">Finance</h3>
-
-                        <div class="lease-box">
-                            <h4>Rate starting from</h4>
-                            <h3>3.99%</h3>
-                            <h5>48 months</h5>
-                        </div>
-
-                        <div class="lease-box">
-                            <h4>Monthly payment starting from</h4>
-                            <h3>3.99%</h3>
-                            <h5>48 months</h5>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
+        <lightbox class="lightbox" :class="{ visible: isVisible }" v-on:closelb="closeLightBox" :piece="currentCarItem"></lightbox>
     </main>
 
 
