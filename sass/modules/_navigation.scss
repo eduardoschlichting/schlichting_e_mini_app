@@ -1,0 +1,35 @@
+.nav-container {
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+
+    background-color: $background-color;
+
+    .nav-content {
+        display: flex;
+         align-items: center;
+         gap: 1.5em;
+        //  margin: 0 1em;
+
+         img {
+             width: 4em;
+         }
+
+         nav ul li {
+             display: inline-block;
+             font-family: $main-type;
+             text-transform: uppercase;
+             font-weight: bold;
+             color: $type-black;
+             font-size: 0.8rem;
+         }
+         li:not(:last-child) {
+             padding-right: 1.5em;
+         }
+    }
+}

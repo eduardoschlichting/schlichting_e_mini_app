@@ -2,12 +2,12 @@
     //store the results
     $result = array();
     
-    function getProfData($conn, $prof) {
+    function getCarData($conn, $car) {
         
-        if (is_null($prof)) {
-            $query = "SELECT * FROM profs";
+        if (is_null($car)) {
+            $query = "SELECT * FROM tbl_cars";
         } else {
-            $query = "SELECT * FROM profs WHERE id='".$prof."'";
+            $query = "SELECT * FROM profs WHERE id='".$car."'";
         };
 
         // $query = is_null($prof) ? "SELECT * FROM profs" : "SELECT * FROM profs WHERE id='".$prof."'";

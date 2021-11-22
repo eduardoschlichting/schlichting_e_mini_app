@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Web App Inspired on the Mini Canada Website",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +15,7 @@
   ],
   "author": "Eduardo Schlichting",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.0.0",

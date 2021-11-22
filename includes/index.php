@@ -5,7 +5,7 @@
    // filter the incoming request
    // this is a ternary statement -. shorthand if/else //?=if true : false 
    $id = isset($_GET["id"]) ? $_GET["id"] : null;
-   $result = getProfData($pdo, $id);
+   $result = getCarData($pdo, $id);
 
 //    if (isset($_GET["id"])) {
 //        // This is the id that the user is passing to the script (1, 2, 3 etc) => ?id=1

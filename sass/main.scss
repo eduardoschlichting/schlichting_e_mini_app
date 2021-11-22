@@ -1,0 +1,28 @@
+@import "modules/_reset";
+@import "modules/_variables";
+@import "modules/_navigation";
+@import "modules/_header";
+@import "modules/_home-content";
+@import "modules/thumbnails";
+@import "modules/lightbox";
+@import "modules/shopping";
+@import "modules/video";
+@import "modules/footer";
+
+@import "modules/_queries";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: $main-type;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}
+
