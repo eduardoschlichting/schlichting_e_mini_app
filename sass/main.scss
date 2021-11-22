@@ -5,9 +5,15 @@
 @import "modules/_home-content";
 @import "modules/thumbnails";
 @import "modules/lightbox";
+@import "modules/shopping";
+@import "modules/video";
+@import "modules/footer";
 
 @import "modules/_queries";
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     overflow-x: hidden;

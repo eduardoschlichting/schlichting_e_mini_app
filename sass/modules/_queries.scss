@@ -107,5 +107,60 @@
             flex-direction: row;
         }
     }
+       
+    }
     
+
+
+// -------
+
+// MINI SHOPPING
+
+@media screen and (min-width: 800px) {
+    .shopping-container {
+    
+        .shopping-outter {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+            gap: 1em;
+            padding: 4em 2em;
+    
+            .shopping-col {
+                max-width: 80%;
+                transition: transform .5s ease-out;
+                margin-bottom: 7em;
+    
+                .shopping-content {
+                    h2 {
+                        font-size: 2em;
+                    }
+                    max-width: 100%;
+                    padding: 3em 2em;
+
+                }
+            }
+            .shopping-col:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+// VIDEO
+
+@media screen and (min-width: 800px) {
+    .video {
+        .video-highlight {
+            top: 10em;
+
+            h2 {
+                font-size: 2.4em;
+            }
+            h3 {
+                font-size: 1.8em;
+            }
+        }
+    }
 }

@@ -1,15 +1,16 @@
 export default {
-    name: "TheLightboxComponent",
-    props: ["piece"],
+  name: "TheLightboxComponent",
+  props: ["piece"],
 
-    template: `
+  template: `
     <section class="lightbox-wrapper">
-    <i class="fas fa-grip-lines" id="close-btn" @click="closeMe"></i>
+    
+    <i class="fas fa-times" id="close-btn" @click="closeMe"></i>
             <div class="lightbox-outter">
                 <div class="car">
                     <img :src='"./dist/" + piece.image' alt="Mini Cooper">
                     <h3>{{piece.car_complete}}</h3>
-                    <p>All Inclusive Price: $ {{piece.price}}</p>
+                    <p>All Inclusive Price: {{piece.price}}</p>
 
                     <div class="book-btn">Book a test drive <i class="fas fa-chevron-right"></i>
                     </div>
@@ -56,12 +57,12 @@ export default {
     </section>
 
     `,
-    methods: {
-        closeMe() {
-            // we can still write plain old JS to control stuff
+  methods: {
+    closeMe() {
+      // we can still write plain old JS to control stuff
 
-            // document.querySelector('.lightbox').classList.remove('visible');
-            this.$emit("closelb");
-        }
-    }
-    }
+      // document.querySelector('.lightbox').classList.remove('visible');
+      this.$emit("closelb");
+    },
+  },
+};

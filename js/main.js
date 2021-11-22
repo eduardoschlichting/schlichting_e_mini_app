@@ -5,6 +5,8 @@ import TheLightbox from "./components/TheLightbox.js";
 
 
 (() => {
+    
+
     const myVue = new Vue({
         created: function() {
             // go fetch the portfolio data here
@@ -34,6 +36,7 @@ import TheLightbox from "./components/TheLightbox.js";
 
             closeLightBox() {
                 this.isVisible = false;
+                
             }
         },
 
@@ -44,5 +47,6 @@ import TheLightbox from "./components/TheLightbox.js";
     }).$mount("#app");
 
     
-    //
-})()
+    // animations
+    
+})();

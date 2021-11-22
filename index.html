@@ -10,11 +10,11 @@
     <title>Homepage - MINI Canada</title>
 </head>
 <body>
-    <main id="app">
+    <main>
         
         <section class="nav-container">
             <div class="nav-content">
-                <img src="./dist/logo.png" alt="logo-white">
+                <img src="./dist/logo.png" alt="logo mini">
 
                 <nav>
                     <ul>
@@ -85,12 +85,16 @@
         </section>
         
         <section class="panel-title">
-            <h2>The Mini 3 door Lineup</h2>
+            <h2>The Mini Family</h2>
         </section>
 
+       
+<section id="app">
+        
         <section class="thumbnail-wrapper">
             <thumb
             v-on:showdata="popLightbox"
+            v-on:hidedata="closeLightBox"
             v-for="item in carsData" 
             :piece="item" 
             :key="item.id">
@@ -101,6 +105,64 @@
         <!-- Lightbox test -->
 
         <lightbox class="lightbox" :class="{ visible: isVisible }" v-on:closelb="closeLightBox" :piece="currentCarItem"></lightbox>
+    </section>
+
+    </section>
+        <section class="shopping-container">
+            <div class="shopping-outter">
+                <div class="shopping-col">
+                    <img src="./dist/shopping.jpg" alt="people shopping at home">
+
+                    <div class="shopping-content">
+                        <h2>Shop current inventory.</h2>
+
+                        <p>Shop now <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+                
+                <div class="shopping-col">
+                    <img src="./dist/mini_shop.jpg" alt="mini cooper at dealership">
+
+                    <div class="shopping-content">
+                        <h2>Design your own mini.</h2>
+
+                        <p>Build & Price <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+
+                <div class="shopping-col">
+                    <img src="./dist/mini_series.jpg" alt="people shopping at home">
+
+                    <div class="shopping-content">
+                        <h2>Not sure which mini to buy?</h2>
+
+                        <p>Mini 101 <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+
+            <div class="video-highlight">
+                <h2 >The best of both drives.</h2>
+                <h3 >The mini Countryman Hybrid SUV. From $44,990.</h3>
+            </div>
+            
+            <div class="video-wrapper">
+                <video src="./dist/fast-facts.mp4" muted autoplay loop></video>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="footer-content">
+                <img src="./dist/logo-white.png" alt="logo-white">
+
+                <h3>2021 Mini Canada.</h3>
+                <h3 class="name-student">Fanshawe College. Eduardo Schlichting.</h3>
+            </div>
+        </footer>
     </main>
 
 

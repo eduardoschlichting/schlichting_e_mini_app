@@ -1,0 +1,32 @@
+.video {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .video-highlight {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 3em;
+        width: 90%;
+        text-align: center;
+        text-transform: uppercase;
+        
+         h2 {
+             padding-bottom: 0.5em;
+             font-size: 1.3em;
+             color: $background-color;
+         }
+         h3 {
+             font-size: .8em;
+             color: $background-color;
+             width: 70%;
+         }
+    }
+    video {
+        width: 100%;
+    }
+}
