@@ -15,7 +15,7 @@
 
 ----
 <h4 align="center">
-  This is a study case of the <a href="https://www.mini.ca">Mini Canada</a> Website exploring Vue.Js and handling data. 
+  This is a study case of the <a href="https://www.mini.ca" target="_blank">Mini Canada</a> Website exploring Vue.Js and handling data. 
 </h4>
 
 <p align="center">
