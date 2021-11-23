@@ -37,6 +37,7 @@ import TheLightbox from "./components/TheLightbox.js";
             closeLightBox() {
                 this.isVisible = false;
                 
+                
             }
         },
 

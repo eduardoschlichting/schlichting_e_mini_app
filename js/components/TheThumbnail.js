@@ -35,8 +35,8 @@ export default {
                 
                 this.$emit("hidedata");
                 this.showingLightbox = false;
-                document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));
-                // this.$refs.arrowdown.classList.remove('arrow-model-open');
+                // document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));
+                this.$refs.arrowdown.classList.remove('arrow-model-open');
             }
             
             // document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));

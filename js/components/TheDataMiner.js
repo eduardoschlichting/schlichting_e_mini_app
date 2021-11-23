@@ -2,6 +2,13 @@
 // params is the optional object that we're going to pass to our data miner
 // this will let us pass things like a user ID or name that we can use in our database query
 // to get one row of data - a more specific query => { id: 1 } or {id: 1, name: "Trevor" }
+function processFailure() {
+    // show a success message in the UI
+    console.table(err); // table shows us an object in table form
+    alert("Sorry, we had a little problem here. Try again later!");
+
+    // show some UI here to let the user know the data retrieve was unsuccesful
+}
 
 function getData(params, cb) { 
     //use the Fetch API to retrieve some data
@@ -19,6 +26,7 @@ function getData(params, cb) {
         baseURL += `?${newQStringParams}`;
         // so that it becomes ./includes/index.php?id=1
     }
+    
 
     fetch(baseURL)
     .then(res => res.json()) // unpack the API response (turn the file back into plain JS object)
@@ -30,7 +38,8 @@ function getData(params, cb) {
         // do anything else here that we want with our data
     })
     
-    .catch(error => console.error(error)); // catch and report any errors        
+    .catch(err => processFailure(err)); // catch and report any errors
+    
 }
 
 export { getData } // named export
