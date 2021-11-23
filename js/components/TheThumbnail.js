@@ -24,16 +24,19 @@ export default {
         showmydata() {
             document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));
             // this.showingLightbox = true;
-            if(this.showingLightbox) {
-                this.$emit("hidedata");
-                this.showingLightbox = false;
-                document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));
-                // this.$refs.arrowdown.classList.remove('arrow-model-open');
-            } else {
+            
+            if(!this.showingLightbox) {
                 this.$emit("showdata", this.piece);
                 this.showingLightbox = true;
                 
                 this.$refs.arrowdown.classList.add('arrow-model-open');
+
+            } else {
+                
+                this.$emit("hidedata");
+                this.showingLightbox = false;
+                document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));
+                // this.$refs.arrowdown.classList.remove('arrow-model-open');
             }
             
             // document.querySelectorAll('.arrow-model').forEach(arrow => arrow.classList.remove('arrow-model-open'));
