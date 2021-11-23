@@ -24,8 +24,12 @@
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#books-requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-seeing-it-in-action">Seeing it in Action</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#thought_balloon-inspiration">License</a>
+  <a href="#memo-license">License</a>
 </p>
+
+<h1 align="center">
+    <img src="./dist/screen_1.png" alt="Mini"> 
+</h1>
 
 ## :page_with_curl: About
 
