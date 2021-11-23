@@ -4,11 +4,9 @@ export default {
 
   template: `
     <section class="lightbox-wrapper">
-    
-    <i class="fas fa-times" id="close-btn" @click="closeMe"></i>
             <div class="lightbox-outter">
                 <div class="car">
-                    <img :src='"./dist/" + piece.image' alt="Mini Cooper">
+                    <img :src='"./dist/" + piece.image' alt="piece.car">
                     <h3>{{piece.car_complete}}</h3>
                     <p>All Inclusive Price: {{piece.price}}</p>
 
